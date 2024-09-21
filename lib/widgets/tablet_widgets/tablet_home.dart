@@ -27,7 +27,7 @@ class TabletHome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                padding: const EdgeInsets.only(top: 150),
+                padding: const EdgeInsets.only(top: 100),
                 width: widthOfIntro,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

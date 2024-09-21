@@ -21,7 +21,7 @@ class DesktopIntro extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                padding: const EdgeInsets.only(top: 150),
+                padding: const EdgeInsets.only(top: 60),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -63,14 +63,14 @@ class DesktopIntro extends StatelessWidget {
                   ],
                 ),
               ),
-              if (screenWidthMob > 800)
-                Image(
-                  width: screenWidthMob * 0.40,
-                  height: screenWidthMob * 0.40,
-                  image: const AssetImage(
-                    "assets/image/intro_image.png",
-                  ),
+              // if (screenWidthMob > 800)
+              Image(
+                width: screenWidthMob * 0.40,
+                height: screenWidthMob * 0.40,
+                image: const AssetImage(
+                  "assets/image/intro_image.png",
                 ),
+              ),
             ],
           ),
         ),

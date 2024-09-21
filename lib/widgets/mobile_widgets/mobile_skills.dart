@@ -21,6 +21,9 @@ class MobileSkills extends StatelessWidget {
             gradient1: Colors.white,
             gradient2: Color(0xFFFF5722), // Dark Orange
           ),
+          SizedBox(
+            height: 25,
+          ),
           SkillContainerBuilder(initial: 0, length: 3),
           SkillContainerBuilder(initial: 3, length: 6),
         ],

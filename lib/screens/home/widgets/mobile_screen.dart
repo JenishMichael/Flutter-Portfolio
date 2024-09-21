@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/widgets/header.dart';
+import 'package:flutter_portfolio/widgets/mobile_view_header.dart';
 import 'package:flutter_portfolio/widgets/mobile_widgets/mobile_about_me.dart';
 import 'package:flutter_portfolio/widgets/mobile_widgets/mobile_contact.dart';
 import 'package:flutter_portfolio/widgets/mobile_widgets/mobile_intro.dart';
@@ -13,7 +13,7 @@ class MobileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Header(scaffoldKey: scaffoldKey),
+        HeaderViewHeader(scaffoldKey: scaffoldKey),
         const Expanded(
           child: SingleChildScrollView(
             child: Column(
@@ -24,7 +24,6 @@ class MobileScreen extends StatelessWidget {
                 MobileAboutMe(),
                 MobileSkills(),
                 MobileContact(),
-                
               ],
             ),
           ),

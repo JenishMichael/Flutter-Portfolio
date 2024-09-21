@@ -29,20 +29,20 @@ class _ContactContainerBuilderState extends State<ContactContainerBuilder> {
               onTap: () {
                 switch (i) {
                   case 0:
-                    print("Inside 0");
-                    String emailId = "jenishm@gmail.com";
+                    String emailId = "jenishmichael21@gmail.com";
+                    print("Inside case 0");
                     Uri emailUri = Uri(
                       scheme: "mailto",
                       path: emailId,
                     );
                     Future<void> emailLaunch() async {
-                      print("Inside 0emailLaunch");
-                      print(emailId);
+                      print("Inside Method");
                       if (await canLaunchUrl(emailUri)) {
-                        print("Inside can mailLaunch");
-
-                        await launchUrl(emailUri);
-                        print("InmailLaunch");
+                        print("Inside If Method");
+                        await launchUrl(
+                          emailUri,
+                        );
+                        print("After Launch If");
                       } else {}
                     }
                     emailLaunch();

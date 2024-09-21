@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/constants/padding_left_right.dart';
 
-class Header extends StatelessWidget {
+class HeaderViewHeader extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
-  const Header({super.key, required this.scaffoldKey});
+  const HeaderViewHeader({super.key, required this.scaffoldKey});
 
   @override
   Widget build(BuildContext context) {
